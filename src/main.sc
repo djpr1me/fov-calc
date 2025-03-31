@@ -88,7 +88,7 @@ theme: /
         buttons:
             "Project Cars 1, 2" -> /hFOV
             "Richard Burns Rally" -> /hFOVrad
-            "F1 2020+"
+            "F1 2021+"
             "Assetto Corsa, Assetto Corsa Competizione" -> /vFOV
             "rFactor 1, 2" -> /vFOV
             "Dirt Rally 1, 2"
