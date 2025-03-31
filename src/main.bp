@@ -20,24 +20,53 @@
     "x" : 260,
     "y" : 2243
   }, {
-    "id" : "/single-screen",
-    "name" : "single-screen",
-    "x" : 734,
-    "y" : 379
-  }, {
     "id" : "/triple-screen",
     "name" : "triple-screen",
-    "x" : 716,
-    "y" : 880
+    "x" : 496,
+    "y" : -407
   }, {
     "id" : "/distance",
     "name" : "distance",
-    "x" : 1234,
-    "y" : 455
+    "x" : 1845,
+    "y" : -1001
   }, {
     "id" : "/calc",
     "name" : "calc",
-    "x" : 1762,
-    "y" : 758
+    "x" : 2288,
+    "y" : -983
+  }, {
+    "id" : "/single-screen-ratio",
+    "name" : "ratio",
+    "x" : 502,
+    "y" : -1257
+  }, {
+    "id" : "/Start",
+    "name" : "set-ratio-4-3",
+    "x" : 87,
+    "y" : -1251
+  }, {
+    "id" : "/set-ratio-16-9",
+    "name" : "set-ratio-4-3_1",
+    "x" : 945,
+    "y" : -1317
+  }, {
+    "id" : "/set-ratio-21-9",
+    "name" : "set-ratio-16:9_1",
+    "x" : 944,
+    "y" : -971
+  }, {
+    "id" : "/set-ratio-32-9",
+    "name" : "set-ratio-21-9_1",
+    "x" : 941,
+    "y" : -627
+  }, {
+    "id" : "/set-ratio-4-3",
+    "x" : 946,
+    "y" : -1644
+  }, {
+    "id" : "/screen-size",
+    "name" : "single-screen_1",
+    "x" : 1452,
+    "y" : -991
   } ]
 }

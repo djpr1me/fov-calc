@@ -1,5 +1,4 @@
-function calculateFOV(screenSize, distance) {
-    var aspectRatio = 16 / 9;
+function calculateFOV(screenSize, distance, aspectRatio) {
     var screenHeight = Math.sqrt(Math.pow(screenSize, 2) / (Math.pow(aspectRatio, 2) + 1));
     var screenWidth = screenHeight * aspectRatio;
     
@@ -9,4 +8,3 @@ function calculateFOV(screenSize, distance) {
     var $session = $jsapi.context().session;
     $session.horizontalFOV = horizontalFOV.toFixed(2);
     $session.verticalFOV = verticalFOV.toFixed(2);
-}
