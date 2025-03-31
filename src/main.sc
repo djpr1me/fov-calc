@@ -20,7 +20,7 @@ theme: /
             "Назад" -> /setup
 
     state: distance
-        a: Супер, а теперь сядь в кресло в рабочую позицию и измеряй расстояние от глаз до монитора.
+        a: Супер, а теперь сядь в кресло в рабочую позицию и измерь расстояние от глаз до монитора.
         InputNumber: 
             prompt = Введи результат в сантиметрах.
             varName = distance
@@ -39,7 +39,7 @@ theme: /
         go!: /pick-sim
 
     state: single-screen-ratio
-        a: Давай определимся с соотношением сторон, выбери из списка какое у тебя соотношение сторон у монитора.
+        a: Укажи соотношение сторон своего монитора.
         buttons:
             "4:3" -> /set-ratio-4-3
             "16:9" -> /set-ratio-16-9
@@ -67,7 +67,7 @@ theme: /
         go!: /screen-size
 
     state: screen-size
-        a: Отлично, возьми рулетку и измеряй диагональ видимой области экрана (не включая безель).
+        a: Отлично, возьми рулетку и измерь диагональ видимой области экрана (не включая безель).
         InputNumber: 
             prompt = Введи результат в сантиметрах.
             varName = screenSize
@@ -83,37 +83,42 @@ theme: /
     state: pick-sim
         a: Я все посчитал, выбери свой симулятор для настройки FOV.
         buttons:
-            "Project Cars 1, 2" -> /hFOV
+            "Project Cars (series)" -> /hFOV
             "Richard Burns Rally" -> /hFOVRBR
             "F1 2021+" -> /hFOVF1
-            "Assetto Corsa, Assetto Corsa Competizione" -> /vFOV
-            "rFactor 1, 2" -> /vFOV
-            "Dirt Rally 1, 2" -> /vFOVDirt
+            "Assetto Corsa (series)" -> /vFOV
+            "rFactor (series)" -> /vFOV
+            "Dirt Rally (series)" -> /vFOVDirt
 
     state: hFOV
         a: Для твоего сетапа будет правильно установить FOV: {{$session.horizontalFOV}} градусов.
         buttons:
-            "Назад" -> /pick-sim
+            "Выбрать другой сим" -> /pick-sim
+            "Начать сначала" -> /setup
 
     state: vFOV
         a: Для твоего сетапа будет правильно установить FOV: {{$session.verticalFOV}} градусов.
         buttons:
-            "Назад" -> /pick-sim
+            "Выбрать другой сим" -> /pick-sim
+            "Начать сначала" -> /setup
 
     state: hFOVRBR
         a: Для твоего сетапа будет правильно установить FOV: {{$session.horizontalFOVRadians}} градусов.
         buttons:
-            "Назад" -> /pick-sim
+            "Выбрать другой сим" -> /pick-sim
+            "Начать сначала" -> /setup
 
     state: vFOVDirt
         a: Для твоего сетапа будет правильно установить FOV: {{$session.dirtRallyFOV}} градусов.
         buttons:
-            "Назад" -> /pick-sim
+            "Выбрать другой сим" -> /pick-sim
+            "Начать сначала" -> /setup
 
     state: hFOVF1
         a: Для твоего сетапа будет правильно установить FOV: {{$session.f1FOV}} градусов.
         buttons:
-            "Назад" -> /pick-sim
+            "Выбрать другой сим" -> /pick-sim
+            "Начать сначала" -> /setup
 
     state: setup
         a: Давай определимся с твоим сетапом, ты используешь один монитор или triple screen?
