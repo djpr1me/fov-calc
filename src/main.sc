@@ -36,8 +36,8 @@ theme: /
 
     state: calc
         script:
-            calculateFOV($session.screenSize, $session.distance);
-        a: Для твоего сетапа будет правильно установить: 
+            calculateFOV($session.aspectRatio, $session.screenSize, $session.distance);
+        a: Для твоего сетапа будет правильно установить:
             
             Горизонтальный FOV: {{$session.horizontalFOV}} градусов
             Вертикальный FOV: {{$session.verticalFOV}} градусов. || htmlEnabled = true, html = "Для твоего сетапа будет правильно установить:&nbsp;<br><ul><li>Горизонтальный FOV: {{$session.horizontalFOV}} градусов</li><li>Вертикальный FOV: {{$session.verticalFOV}} градусов.</li></ul>"
