@@ -4,26 +4,14 @@
     "x" : 248,
     "y" : 387
   }, {
-    "id" : "/Hello",
-    "x" : 261,
-    "y" : 1111
-  }, {
-    "id" : "/Bye",
-    "x" : 261,
-    "y" : 1488
-  }, {
     "id" : "/NoMatch",
-    "x" : 258,
-    "y" : 1846
-  }, {
-    "id" : "/Match",
-    "x" : 260,
-    "y" : 2243
+    "x" : 71,
+    "y" : -141
   }, {
     "id" : "/triple-screen",
     "name" : "triple-screen",
-    "x" : 496,
-    "y" : -407
+    "x" : 492,
+    "y" : -708
   }, {
     "id" : "/distance",
     "name" : "distance",
