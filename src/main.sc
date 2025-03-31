@@ -58,22 +58,7 @@ theme: /
             minValue = 50
             maxValue = 150
             actions = 
-
-    state: calc
         script:
-            function calculateFOV(screenDiagonal, distanceToScreen) {
-            const aspectRatio = 16 / 9;
-            const screenHeight = Math.sqrt(Math.pow(screenDiagonal, 2) / (Math.pow(aspectRatio, 2) + 1));
-            const screenWidth = screenHeight * aspectRatio;
-            const horizontalFOV = 2 * Math.atan((screenWidth / 2) / distanceToScreen) * (180 / Math.PI);
-            const verticalFOV = 2 * Math.atan((screenHeight / 2) / distanceToScreen) * (180 / Math.PI);
-            return {
-                horizontalFOV: horizontalFOV.toFixed(2),
-                verticalFOV: verticalFOV.toFixed(2)
-            };
-                }
-                // Использование переменных из $session
-                const screenDiagonal = $session.screenSize; // диагональ экрана в сантиметрах
-                const distanceToScreen = $session.distance; // расстояние до экрана в сантиметрах
-                const fov = calculateFOV(screenDiagonal, distanceToScreen);
-        a: Горизонтальный FOV: ${fov.horizontalFOV} градусов
+            $session.distance = parseFloat($session.message);
+            calculateFOV($session.screenSize, $session.distance);
+        a: Для вашей установки: Горизонтальный FOV: {{$session.horizontalFOV}} градусов, Вертикальный FOV: {{$session.verticalFOV}} градусов.
