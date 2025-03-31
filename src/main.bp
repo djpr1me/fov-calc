@@ -64,17 +64,27 @@
   }, {
     "id" : "/hFOV",
     "name" : "hFOV",
-    "x" : 3197,
-    "y" : -1254
+    "x" : 3207,
+    "y" : -1529
   }, {
     "id" : "/vFOV",
     "name" : "vFOV",
-    "x" : 3199,
-    "y" : -566
+    "x" : 3205,
+    "y" : -707
   }, {
-    "id" : "/hFOVrad",
+    "id" : "/hFOVRBR",
     "name" : "vFOVrad",
-    "x" : 3199,
-    "y" : -910
+    "x" : 3207,
+    "y" : -1116
+  }, {
+    "id" : "/vFOVDirt",
+    "name" : "hFOVRBR_1",
+    "x" : 3207,
+    "y" : -302
+  }, {
+    "id" : "/hFOVF1",
+    "name" : "vFOVDirt_1",
+    "x" : 3207,
+    "y" : 105
   } ]
 }

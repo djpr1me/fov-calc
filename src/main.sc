@@ -37,9 +37,7 @@ theme: /
     state: calc
         script:
             calculateFOV($session.screenSize, $session.distance, $session.aspectRatio);
-        a: Для твоего сетапа будет правильно установить:
-            Горизонтальный FOV: {{$session.horizontalFOV}} градусов
-            Вертикальный FOV: {{$session.verticalFOV}} градусов. || htmlEnabled = true, html = "Для твоего сетапа будет правильно установить:&nbsp;<br><ul><li>Горизонтальный FOV: {{$session.horizontalFOV}} градусов</li><li>Вертикальный FOV: {{$session.verticalFOV}} градусов.</li></ul>"
+        go!: /pick-sim
 
     state: single-screen-ratio
         a: Давай определимся с соотношением сторон, выбери из списка какое у тебя соотношение сторон у монитора.
@@ -87,17 +85,33 @@ theme: /
         a: Я все посчитал, выбери свой симулятор для настройки FOV.
         buttons:
             "Project Cars 1, 2" -> /hFOV
-            "Richard Burns Rally" -> /hFOVrad
-            "F1 2021+"
+            "Richard Burns Rally" -> /hFOVRBR
+            "F1 2021+" -> /hFOVF1
             "Assetto Corsa, Assetto Corsa Competizione" -> /vFOV
             "rFactor 1, 2" -> /vFOV
-            "Dirt Rally 1, 2"
+            "Dirt Rally 1, 2" -> /vFOVDirt
 
     state: hFOV
         a: Для твоего сетапа будет правильно установить FOV: {{$session.horizontalFOV}} градусов.
+        buttons:
+            "Назад" -> /pick-sim
 
     state: vFOV
         a: Для твоего сетапа будет правильно установить FOV: {{$session.verticalFOV}} градусов.
+        buttons:
+            "Назад" -> /pick-sim
 
-    state: hFOVrad
+    state: hFOVRBR
         a: Для твоего сетапа будет правильно установить FOV: {{$session.horizontalFOVRadians}} градусов.
+        buttons:
+            "Назад" -> /pick-sim
+
+    state: vFOVDirt
+        a: Для твоего сетапа будет правильно установить FOV: {{$session.dirtRallyFOV}} градусов.
+        buttons:
+            "Назад" -> /pick-sim
+
+    state: hFOVF1
+        a: Для твоего сетапа будет правильно установить FOV: {{$session.f1FOV}} градусов.
+        buttons:
+            "Назад" -> /pick-sim
