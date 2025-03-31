@@ -30,8 +30,8 @@
   }, {
     "id" : "/Start",
     "name" : "set-ratio-4-3",
-    "x" : 87,
-    "y" : -1251
+    "x" : -486,
+    "y" : -1229
   }, {
     "id" : "/set-ratio-16-9",
     "name" : "set-ratio-4-3_1",
@@ -86,5 +86,10 @@
     "name" : "vFOVDirt_1",
     "x" : 3207,
     "y" : 105
+  }, {
+    "id" : "/setup",
+    "name" : "Start_1",
+    "x" : 44,
+    "y" : -1239
   } ]
 }
