@@ -1,4 +1,5 @@
 require: slotfilling/slotFilling.sc
+require: functions.js
   module = sys.zb-common
 theme: /
 
@@ -58,7 +59,8 @@ theme: /
             minValue = 50
             maxValue = 150
             actions = 
+
+    state: calc
         script:
-            $session.distance = parseFloat($session.message);
             calculateFOV($session.screenSize, $session.distance);
         a: Для вашей установки: Горизонтальный FOV: {{$session.horizontalFOV}} градусов, Вертикальный FOV: {{$session.verticalFOV}} градусов.

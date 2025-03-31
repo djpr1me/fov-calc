@@ -32,7 +32,12 @@
   }, {
     "id" : "/distance",
     "name" : "distance",
-    "x" : 1203,
+    "x" : 1234,
     "y" : 455
+  }, {
+    "id" : "/calc",
+    "name" : "calc",
+    "x" : 1762,
+    "y" : 758
   } ]
 }
