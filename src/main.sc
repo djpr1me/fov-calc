@@ -38,9 +38,8 @@ theme: /
         script:
             calculateFOV($session.screenSize, $session.distance, $session.aspectRatio);
         a: Для твоего сетапа будет правильно установить:
-            
-            Горизонтальный FOV: {{$session.horizontalFOV}} градусов
-            Вертикальный FOV: {{$session.verticalFOV}} градусов. || htmlEnabled = true, html = "Для твоего сетапа будет правильно установить:&nbsp;<br><ul><li>Горизонтальный FOV: {{$session.horizontalFOV}} градусов</li><li>Вертикальный FOV: {{$session.verticalFOV}} градусов.</li></ul>"
+                Горизонтальный FOV: {{$session.horizontalFOV}} градусов
+                Вертикальный FOV: {{$session.verticalFOV}} градусов. || htmlEnabled = true, html = "Для твоего сетапа будет правильно установить:&nbsp;<br><ul><li>Горизонтальный FOV: {{$session.horizontalFOV}} градусов</li><li>Вертикальный FOV: {{$session.verticalFOV}} градусов.</li></ul>"
 
     state: single-screen-ratio
         a: Давай определимся с соотношением сторон, выбери из списка какое у тебя соотношение сторон у монитора.
@@ -83,3 +82,13 @@ theme: /
             minValue = 48
             maxValue = 124
             actions = 
+
+    state: pick-sim
+        a: Я все посчитал, выбери свой симулятор для настройки FOV.
+        buttons:
+            "Project Cars 1, 2"
+            "Richard Burns Rally"
+            "F1 2020+"
+            "Assetto Corsa, Assetto Corsa Competizione"
+            "rFactor 1, 2"
+            "Dirt Rally 1, 2"

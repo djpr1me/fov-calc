@@ -56,5 +56,10 @@
     "name" : "single-screen_1",
     "x" : 1452,
     "y" : -991
+  }, {
+    "id" : "/pick-sim",
+    "name" : "pick-sim",
+    "x" : 2719,
+    "y" : -985
   } ]
 }
