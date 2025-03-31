@@ -1,2 +1,30 @@
 <test>
+    <test-case>
+        <q>/start</q>
+        <a state="/Start"/>
+        <q>Как дела</q>
+        <a state="/NoMatch"/>
+    </test-case>
+
+    <test-case>
+        <q>/start</q>
+        <a state="/Start"/>
+        <q>Один монитор</q>
+        <a state="/single-screen-ratio"/>
+        <q>16:9</q>
+        <a state="/set-ratio-16-9"/>
+        <q>55</q>
+        <a state="/distance"/>
+        <q>100</q>
+        <a state="/calc"/>
+        <q>Project Cars (series)</q>
+        <a state="/hFOV"/>
+    </test-case>
+
+    <test-case>
+        <q>/start</q>
+        <a state="/Start"/>
+        <q>Triple screen</q>
+        <a state="/triple-screen"/>
+    </test-case>
 </test>
