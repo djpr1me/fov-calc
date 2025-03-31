@@ -61,5 +61,20 @@
     "name" : "pick-sim",
     "x" : 2719,
     "y" : -985
+  }, {
+    "id" : "/hFOV",
+    "name" : "hFOV",
+    "x" : 3197,
+    "y" : -1254
+  }, {
+    "id" : "/vFOV",
+    "name" : "vFOV",
+    "x" : 3199,
+    "y" : -566
+  }, {
+    "id" : "/hFOVrad",
+    "name" : "vFOVrad",
+    "x" : 3199,
+    "y" : -910
   } ]
 }

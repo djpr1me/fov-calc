@@ -12,4 +12,5 @@ function calculateFOV(screenSize, distance, aspectRatio) {
     $session.horizontalFOV = Math.ceil(horizontalFOVDegrees);
     $session.verticalFOV = Math.ceil(verticalFOVDegrees);
     $session.horizontalFOVRadians = horizontalFOVRadians;
+    $session.dirtRallyFOV = Math.ceil(verticalFOVDegrees * 2);
 }
