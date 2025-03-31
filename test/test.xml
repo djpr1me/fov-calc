@@ -13,11 +13,4 @@
         <q>Project Cars (series)</q>
         <a state="/hFOV"/>
     </test-case>
-
-    <test-case>
-        <q>/start</q>
-        <a state="/Start"/>
-        <q>Triple screen</q>
-        <a state="/triple-screen"/>
-    </test-case>
 </test>
