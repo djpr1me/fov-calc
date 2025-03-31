@@ -1,14 +1,7 @@
 <test>
     <test-case>
         <q>/start</q>
-        <a state="/setup"/>
-        <q>Как дела</q>
-        <a state="/NoMatch"/>
-    </test-case>
-
-    <test-case>
-        <q>/start</q>
-        <a state="/setup"/>
+        <a state="/Start"/>
         <q>Один монитор</q>
         <a state="/single-screen-ratio"/>
         <q>16:9</q>
@@ -23,7 +16,7 @@
 
     <test-case>
         <q>/start</q>
-        <a state="/setup"/>
+        <a state="/Start"/>
         <q>Triple screen</q>
         <a state="/triple-screen"/>
     </test-case>
